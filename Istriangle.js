@@ -6,12 +6,19 @@ const showOutput = document.querySelector("#outputEl");
 
 function calculateSumOfAngles(angle1,angle2,angle3) {
 const sumOfAngles = angle1 + angle2 + angle3;
-// console.log(sumOfAngles);
+return sumOfAngles;
 
 }
 
 function isTriangle() {
-// const sumOfAngles = calculateSumOfAngles(45°,45°,90°);
+const sumOfAngles = calculateSumOfAngles(Number(inputFieds[0].value),Number(inputFieds[1].value),Number(inputFieds[2].value));
+if(sumOfAngles === 180){
+    showOutput.innerText = "Yes, The angles form a triangle";
 }
+else {
+    showOutput.innerText = "Oh oh! The angle don't form a triangle";
+    }
+}
+
 
 isTrianglebtn.addEventListener("click", isTriangle)
