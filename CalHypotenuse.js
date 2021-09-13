@@ -13,6 +13,9 @@ function calculateHypotenuse() {
    const sideSqrt = calculateSqrt(Number(inputs[0].value), Number(inputs[1].value));
    const lengthOfHypotenuse = Math.sqrt(sideSqrt);
 //    console.log(lengthOfHypotenuse);
+if (sideSqrt === lengthOfHypotenuse) {
+    
+}
 }
 
 hypotenuseBtn.addEventListener("click", calculateHypotenuse);
