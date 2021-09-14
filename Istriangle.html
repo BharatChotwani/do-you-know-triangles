@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is Triangle?</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -15,19 +14,24 @@
         <a href="hypotenuse.html" target="_blank" rel="noopener noreferrer">Hypotenuse</a>
         <a href="Area.html" target="_blank" rel="noopener noreferrer">Area</a>
     </nav>
-    <h1>Is Triangle?</h1>
+    <div class="container">
+    <h1 class="heading">Is Triangle?</h1>
+    <div class="input-container">
     <label for="angle1">Angle(in degrees)</label>
-    <input type="number"  class="angle-input"/>
+    <input type="number"  class="angle-input input"/>
 
     <label for="angle2">Angle(in degrees)</label>
     <input type="number" class="angle-input"/>
 
     <label for="angle3">Angle(in degrees)</label>
-    <input type="number" class="angle-input"/>
+    <input type="number" class="angle-input input"/>
 
-    <button id="Istrianglebtn">Is Triangle?</button>
-    <div id="outputEl"></div>
+    </div>
+
+    <button id="Istrianglebtn" class="btn">Is Triangle?</button>
+    <div id="outputEl" class="output"></div>
 
     <script defer src="Istriangle.js"></script>
+    </div>
 </body>
 </html>
