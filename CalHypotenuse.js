@@ -11,11 +11,7 @@ function calculateSqrt(a, b){
 
 function calculateHypotenuse() {
    const sideSqrt = calculateSqrt(Number(inputs[0].value), Number(inputs[1].value));
-   const lengthOfHypotenuse = Math.sqrt(sideSqrt);
-//    console.log(lengthOfHypotenuse);
-/* if (a, b === inputs) {
-    outPut.innerText = "Yay, The sides is Hypotenuse " + lengthOfHypotenuse;
-} */
+   const lengthOfHypotenuse = Math.sqrt(sideSqrt).toFixed(2);
 outPut.innerText = "Yay, The sides is Hypotenuse " + lengthOfHypotenuse;
 }
 
