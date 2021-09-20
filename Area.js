@@ -10,7 +10,12 @@ function calculateSides(a, b){
 
 function calcculateArea(){
     const sumOfSides = calculateSides(Number(areaInputs[0].value), Number(areaInputs[1].value));
-    showOutput.innerText = "The area of Triangle is " + sumOfSides;
+    if(sumOfSides > 0){
+    showOutput.innerText = "The area of Triangle is " + sumOfSides;}
+    
+    else{
+        showOutput.innerText = "Please fill the correct values in field";
+    }
 }
 
 calculateAreaBtn.addEventListener("click", calcculateArea);
