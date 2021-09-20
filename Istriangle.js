@@ -15,10 +15,15 @@ const sumOfAngles = calculateSumOfAngles(Number(inputFieds[0].value),Number(inpu
 if(sumOfAngles === 180){
     showOutput.innerText = "Yes, The angles form a triangle";
 }
-else {
-    showOutput.innerText = "Oh oh! The angle don't form a triangle";
+else if(sumOfAngles < 0) {
+    showOutput.innerText = "opps, please fill the correct value.";
     }
+else {
+    showOutput.innerText = "No, The angles are not form a triangle";
+}
 }
 
 
-isTrianglebtn.addEventListener("click", isTriangle)
+
+
+isTrianglebtn.addEventListener("click", isTriangle);
