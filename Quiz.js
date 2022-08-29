@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".quiz-form");
 const submitBtn = document.querySelector("#submit-btn");
 const outputEl = document.querySelector("#show-output");
 
-const correctAnswers = ["90°", "right angled"];
+const correctAnswers = ["90°", "right angled", "Polydor", "3", "2", "Hypotenuse", "A geometric figure", "Equilateral", "Geometry", "Scalene"];
 
 function calculateScore() {
     let score = 0;
@@ -14,7 +14,6 @@ function calculateScore() {
         }
         index = index + 1;
     }
-    // console.log(score);
     outputEl.innerText = "Your score is " + score;
 }
 
