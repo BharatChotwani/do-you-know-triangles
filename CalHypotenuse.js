@@ -3,9 +3,12 @@ const hypotenuseBtn = document.querySelector("#calculate-hypotenuse");
 const outPut = document.querySelector("#show-output");
 
 function calculateSqrt(a, b){
+    if(a > 0 && b > 0){
     const sideSqrt = a*a + b*b ;
-    console.log(sideSqrt);
     return sideSqrt
+} else{
+    outPut.innerText = "Please enter valid number."
+}
 }
 
 function calculateHypotenuse() {

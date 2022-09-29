@@ -5,7 +5,11 @@ const showOutput = document.querySelector("#outputEl");
 console.log(Number(inputFieds[0].value), Number(inputFieds[1].value), Number(inputFieds[2].value))
 
 function calculateSumOfAngles(angle1,angle2,angle3) {
-const sumOfAngles = angle1 + angle2 + angle3;
+    if(angle1 > 0 && angle2 > 0 && angle3 > 0){
+const sumOfAngles = angle1 + angle2 + angle3;}
+else{
+    showOutput.innerText = "Please enter valid angle (we are not taking negative or 0 values)";
+}
 return sumOfAngles;
 
 }
